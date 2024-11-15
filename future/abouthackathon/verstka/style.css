@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
+body {
+  background-color: #113B60;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column; /* Изменяем направление flex на вертикальное */
+  align-items: flex-start; /* Выравниваем по левому краю */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 128px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-left: 30px;
+ }
+ 
+ .white {
+  color: white;
+ }
+ 
+ .blue {
+  background: linear-gradient(to right, #52BDE9 0%, #0E83D7 52%, #036CAD 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ 
+ article {
+  width: 50%;
+  font-size: 32px;
+  color: white; 
+  padding: 20px;
+  background-color: #113B60;
+  width: 1043px; 
+  height: 380px; 
+  margin-left: 30px; 
+  font-weight: 400; 
+ }
+ 
+ aside {
+  width: 50px; 
+  margin-bottom: 20px; 
+ }
+ 
