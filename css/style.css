@@ -1,6 +1,7 @@
-body {
+html {
   overflow-x: hidden;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 #organizers {
