@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Кодировка страницы -->
+    <meta charset="UTF-8" />
+    <!-- Метатег для управления масштабированием на мобильных устройствах -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Заголовок страницы, отображаемый в вкладке браузера -->
+    <title>EESTech-Challenge</title>
+    <style>
+        body {
+            /* Устанавливает цвет фона страницы (#113b60) */
+            background-color: #113b60;
+
+            /* Задает фоновое изображение 'intro_bg.png' */
+            background-image: url('intro_bg.png');
+
+            /* Масштабирование изображение, чтобы оно покрывало весь экран */
+            background-size: cover;
+
+            /* Центрирует фоновое изображение */
+            background-position: center;
+
+            /* Отключение повторения */
+            background-repeat: no-repeat;
+
+            /* Устанавливает цвет текста */
+            color: white;
+
+            /* Задает шрифт для текста */
+            font-family: Roboto Condensed, sans-serif;
+
+            /* Применяет Flexbox для выравнивания содержимого в центре страницы */
+            display: flex;
+
+            /* Выравнивает содержимое по горизонтали в центре экрана */
+            justify-content: center;
+
+            /* Выравнивает содержимое по вертикали в центре экрана */
+            align-items: center;
+
+            /* Задает высоту элемента в 100% высоты видимой области браузера */
+            height: 100vh;
+
+            /* Убирает внешние отступы вокруг элемента, чтобы заполнить всю видимую область */
+            margin: 0;
+        }
+
+        /* Контейнер для основного содержимого */
+        .container {
+            width: 1473px;
+            text-align: center; /* Выравнивание текста по центру */
+        }
+
+        p {
+            margin: 0;
+        }
+
+        /* Стилизация главного заголовка */
+        h1 {
+            font-size: 128px;
+            font-weight: 500;
+            font-stretch: condensed;
+            margin-bottom: 25px;
+        }
+
+        /* Стили для блока партнера */
+        .partner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 13px;
+        }
+
+        /* Стили для текста */
+        .partner .text {
+            max-width: 930px;
+            text-align: left;
+            font-size: 30px;
+            color: white;
+        }
+
+        /* Выделение текста Lorem ipsum */
+        .text .highlight {
+            color: #52BDE9;
+        }
+
+        /* Выравнивание изображения логотипа */
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 33%;
+        }
+
+        /* Стили для изображения логотипа */
+        .logo img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Главный заголовок -->
+        <h1>Партнеры</h1>
+
+        <!-- Первый блок партнера -->
+        <div class="partner">
+            <div class="text">
+                <p>
+                    <span class="highlight">Lorem ipsum</span> – dolor sit amet,
+                    consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar,
+                    sit amet efficitur erat consequat. Nam sed enim non metus iaculis
+                    blandit.
+                </p>
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="eestec LC St. Petersburg" />
+            </div>
+        </div>
+
+        <!-- Второй блок партнера -->
+        <div class="partner">
+            <div class="logo">
+                <img src="logo.png" alt="eestec LC St. Petersburg" />
+            </div>
+            <div class="text">
+                <p>
+                    <span class="highlight">Lorem ipsum</span> – dolor sit amet,
+                    consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar,
+                    sit amet efficitur erat consequat. Nam sed enim non metus iaculis
+                    blandit.
+                </p>
+            </div>
+        </div>
+
+        <!-- Третий блок партнера -->
+        <div class="partner">
+            <div class="text">
+                <p>
+                    <span class="highlight">Lorem ipsum</span> – dolor sit amet,
+                    consectetur adipiscing elit. Mauris fermentum nunc a purus pulvinar,
+                    sit amet efficitur erat consequat. Nam sed enim non metus iaculis
+                    blandit.
+                </p>
+            </div>
+            <div class="logo">
+                <img src="logo.png" alt="eestec LC St. Petersburg" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
