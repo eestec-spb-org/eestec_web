@@ -21,6 +21,9 @@ header {
     width: 100%;
     height: 12%;
     color: #ECF7FD;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(#52BDE9 100%, #0E83D7 100%);
+    border-image-slice: 1;
 }
 
 footer {
@@ -39,13 +42,6 @@ footer {
     opacity: 0px;
     margin-left: 3%;
     display: flex;
-}
-
-.underline_head {
-    height: 3px;
-    gap: 0px;
-    opacity: 0px;
-    margin-left: -2px;
 }
 
 .nav_head a {
