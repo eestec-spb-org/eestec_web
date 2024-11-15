@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap');
-body {
+#about {
   background-color: #113B60;
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
@@ -7,27 +7,43 @@ body {
   display: flex;
   flex-direction: column; /* Изменяем направление flex на вертикальное */
   align-items: flex-start; /* Выравниваем по левому краю */
-  padding: 20px;
+  padding: 15px 10px;
 }
 
-h1 {
-  font-size: 128px;
+#about h1 {
+  font-size: 6vw;
   margin-bottom: 20px;
   font-weight: 500;
-  margin-left: 30px;
+  margin-left: 48px;
  }
+
+#about p {
+  font-size: 1.8vmax;
+}
+
+.about-text {
+  max-width: 50vw;
+}
+
+#about-almaz {
+  position: absolute;
+  right: -50px;
+  top: 150px;
+  max-width: 45vw;
+  height: auto;
+}
  
- .white {
+ #about .white {
   color: white;
  }
  
- .blue {
+ #about .blue {
   background: linear-gradient(to right, #52BDE9 0%, #0E83D7 52%, #036CAD 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
  }
  
- article {
+ #about article {
   width: 50%;
   font-size: 32px;
   color: white; 
@@ -39,8 +55,4 @@ h1 {
   font-weight: 400; 
  }
  
- aside {
-  width: 50px; 
-  margin-bottom: 20px; 
- }
  
