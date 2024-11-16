@@ -3,7 +3,11 @@
 }
 
 body {
-  background-color: #113B60;
+  background-color: #113b60;
+  background-image: url('../resources/intro_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .faq-columns-container {
