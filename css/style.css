@@ -7,7 +7,7 @@ html {
 #organizers {
     width: 100%;
     background-color: #113B60;
-    font-family: 'Roboto Condensed', sans-serif; /* Add font to the body */
+    font-family: 'Roboto Condensed', sans-serif; 
     font-size: 24px;
     font-weight: 500;
     line-height: 28.13px;
@@ -18,15 +18,23 @@ html {
     align-items: center;
 }
 
+#partners {
+  margin-top: 7vw;
+}
+
 #navbar header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0px;
     opacity: 0px;
-    width: 100%; /* Make the header span the entire width */
+    width: 100%;
     height: 12%;
     color: #ECF7FD;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(#52BDE9 100%, #0E83D7 100%);
+    border-image-slice: 1;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 footer {
@@ -35,6 +43,7 @@ footer {
     align-items: center;
     width: 100%; /* Make the footer span the entire width */
     color: #ECF7FD;
+    padding: 0px 0px 343px 0px;
 
     margin: 30px 0px;
 }
@@ -42,17 +51,11 @@ footer {
 .logo svg,
 .logo img { /* Apply styling to both SVG and image logos */
     max-width: 100%;
+    color: #ECF7FD
     gap: 0px;
     opacity: 0px;
     margin-left: 3%;
     display: flex;
-}
-
-.underline_head {
-    height: 3px;
-    gap: 0px;
-    opacity: 0px;
-    margin-left: -2px;
 }
 
 .nav_head a {
@@ -63,20 +66,20 @@ footer {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #ECF7FD; /* Set link color */
-    text-decoration: none; /* Убрать подчеркивание */
+    color: #ECF7FD;
+    text-decoration: none; 
 } 
 
 .nav_foot a {
-    font-family: 'Roboto Condensed', sans-serif; /* Add font to the body */
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 28.13px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color: #ECF7FD; /* Set link color */
-    text-decoration: none; /* Убрать подчеркивание */
+    color: #ECF7FD; 
+    text-decoration: none; 
 }
 
 .nav_head {
@@ -86,29 +89,26 @@ footer {
     margin-right: 60px;
     gap: 25px;
     opacity: 0px;
-    /* Remove unnecessary width and height styles */
 }
 
 .sub_foot {
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
-    /* Remove unnecessary width, height, and padding styles */
+    flex-direction: column;
+    align-items: center;
 }
 
 .info_foot {
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+    align-items: center; 
     gap: 40px;
     opacity: 0px;
-    /* Remove unnecessary width and height styles */
 }
 
 .logo_foot svg,
 .logo_foot img {
-    width: 100%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
     padding: 10px 0px 0px 0px;
     gap: 10px;
     opacity: 0px;
@@ -119,14 +119,12 @@ footer {
     display: flex;
     gap: 34px;
     opacity: 0px;
-    /* Remove unnecessary width and height styles */
 }
 
 .social-links {
     display: flex;
     gap: 31.82px;
     opacity: 0px;
-    /* Remove unnecessary width and height styles */
 }
 
 .copyright {
@@ -138,18 +136,26 @@ footer {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    /* Remove unnecessary width, height, and padding styles */
 }
 
-.partners,
+.partners {
+    width: 70%;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+}
+
 .orgs {
     margin-top: 20vh;
     width: 70%;
     gap: 0px;
     opacity: 0px;
     display: flex;
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
     margin-left: 15%;
 }
 
@@ -173,6 +179,7 @@ footer {
 }
 
 .partner-text {
+    width: 70%;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 24px;
     text-align: left;
@@ -190,23 +197,31 @@ footer {
     text-decoration-skip-ink: none;
     color: #ECF7FD;
 }
+  
+.image-container {
+    display: flex;
+    justify-content: space-around; 
+    margin: 20px auto; 
+}
+  
+.image-container img {
+    width: 300px; 
+    height: auto; 
+}
+  
+.tilted-left {
+    transform-origin: right bottom;
+    transform: rotate(-5deg); 
+}
+  
+.tilted-right {
+    transform-origin: left bottom;
+    transform: rotate(5deg); 
+}
 
-.carousel {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent images from wrapping */
-    width: 500px; /* Adjust width as needed */
-    height: 300px; /* Adjust height as needed */
-  }
-  
-  .carousel-inner {
-    display: flex; /* Arrange images horizontally */
-  }
-  
-  .carousel img {
-    width: 200px; /* Adjust image width as needed */
-    height: auto;  /* Maintain aspect ratio */
-    margin-right: 10px; /* Add spacing between images */
-  }
+.straight {
+    transform: rotate(0deg); 
+}
 
 
 .partner-text span {

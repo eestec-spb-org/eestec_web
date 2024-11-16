@@ -7,6 +7,8 @@
   <link href="css/faq.css" rel="stylesheet">
   <link href="css/about.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
       <div class="nav_head">
         <a href="#">Главная</a>
         <a href="#about">О хакатоне</a>
-        <a href="#">Тематика этого года</a>
+        <a href="#theme">Тематика этого года</a>
         <a href="#organizers">Организаторы</a>
         <a href="#partners">Партнёры</a>
         <a href="#faq">ЧаВо</a>
@@ -26,9 +28,47 @@
     </header>
 
     <div class="underline_head">
-        <img src="resources/Rectangle 21 EESTech Challenge.svg" alt="Underline">
     </div>
   </div>
+
+  <div id="main">
+    <main>
+        <div class="main_block">
+            <div class="upper">
+                <p><span class="blue_gradient">#</span>ReadyForThe<span class="blue_gradient">Challenge?</span></p>
+            </div>
+            <div class="middle">
+                <p>Регистрируйся на локальный раунд хакатона EESTech <br> 
+                    Challenge и прими участие в крупнейшем соревновании для <br> 
+                    студентов-инженеров в Европе!</p>
+                <a href="login.html">
+                  Регистрация
+                  <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.875 0.125L8.89187 1.08269L14.1031 6.3125H0.25V7.6875H14.1031L8.89187 12.8939L9.875 13.875L16.75 7L9.875 0.125Z" fill="#ECF7FD"/>
+                  </svg>
+                </a>
+            </div>
+            <div class="lower">
+                <div>
+                    <p><span class="blue_gradient">200k</span></p>
+                    <p>Призовой фонд</p>
+                </div>
+                <div>
+                    <p><span class="blue_gradient">200+</span></p>
+                    <p>Участников в прошлом году</p>
+                </div>
+                <div>
+                    <p><span class="blue_gradient">20+</span></p>
+                    <p>Команд в прошлом году</p>
+                </div>
+                <div>
+                    <p><span class="blue_gradient">4</span></p>
+                    <p>Года проводится хакатон</p>
+                </div>
+            </div>
+        </div>
+    </main>
+  </div> 
 
   <div id="about">
     <header>
@@ -57,17 +97,44 @@
     </main>
   </div>
 
+  <div id="theme">
+    <header>
+      <h1 class="header-text">
+        <span class="white">Тематика этого года -</span><br>
+        <span class="blue">Electrical Circuit</span><br>
+        <span class="blue">for Industry 4.0</span>
+      </h1>
+    </header>
+    <main>
+      <aside>
+        <img src="resources/almaz2.png" alt="Рисунок алмаза" id="almaz">
+      </aside>
+      <article>
+        <p>EESTech Challenge или EESTEC Technology Challenge — это ежегодные
+          международные студенческие соревнования, организуемые EESTEC. Его
+          цель – создать возможности для европейских студентов получить знания
+          и практический опыт в области электротехники и информатики, а также
+          развивать профессиональные сети. Тема конкурса EESTech Challenge
+          меняется каждый год и раскрывается на церемонии открытия.</p>
+        <button class="more-button">
+            Подробнее
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.375 0.125L9.39187 1.08269L14.6031 6.3125H0.75V7.6875H14.6031L9.39187 12.8939L10.375 13.875L17.25 7L10.375 0.125Z" fill="#ECF7FD"/>
+            </svg>
+        </button>
+      </article>
+    </main>
+  </div>
+
   <div id="organizers">
     <section class="orgs">
-      <div class="orgs-title">
+      <div class="partners-title">
         Организаторы
       </div>
-      <div class="carousel">
-        <div class="carousel-inner">
-          <img src="resources/2024-11-15 20.56.33.jpg" alt="Image 1" style="width: 200px; height: auto; display: inline-block; margin-right: 10px;">
-          <img src="resources/2024-11-15 20.56.43.jpg" alt="Image 2" style="width: 200px; height: auto; display: inline-block; margin-right: 10px;">
-          <img src="resources/2024-11-15 20.56.47.jpg" alt="Image 3" style="width: 200px; height: auto; display: inline-block; margin-right: 10px;">
-        </div>
+      <div class="image-container">
+        <img src="resources/2024-11-15 20.56.33.jpg" alt="Tilted Left" class="tilted-left">
+        <img src="resources/2024-11-15 20.56.43.jpg" alt="Straight" class="straight">
+        <img src="resources/2024-11-15 20.56.47.jpg" alt="Tilted Right" class="tilted-right">
       </div>
 
       <div class="orgs-text">
