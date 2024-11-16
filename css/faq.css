@@ -7,7 +7,7 @@ body {
   background-image: url('../resources/intro_bg.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .faq-columns-container {

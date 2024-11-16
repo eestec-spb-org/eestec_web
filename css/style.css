@@ -43,7 +43,6 @@ footer {
     align-items: center;
     width: 100%; /* Make the footer span the entire width */
     color: #ECF7FD;
-    padding: 0px 0px 343px 0px;
 
     margin: 30px 0px;
 }
@@ -129,7 +128,7 @@ footer {
 
 .copyright {
     text-align: center;
-    font-family: Roboto Condensed;
+    font-family: Roboto Condensed, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 50%;
@@ -225,7 +224,7 @@ footer {
 
 
 .partner-text span {
-    font-family: Roboto Condensed;
+    font-family: Roboto Condensed, sans-serif;
     font-size: 24px;
     text-align: left;
     text-underline-position: from-font;
