@@ -51,7 +51,7 @@ label {
   color: #1570EF;
 }
 
-input[type="password"], input[type="email"] {
+.data-input {
   background-color: #ECF7FD;
   transition: border-color 0.3s;
   border: 2px solid #D0D5DD;
@@ -62,7 +62,7 @@ input[type="password"], input[type="email"] {
   width: 100%;
 }
 
-input[type="password"]:focus, input[type="email"]:focus {
+.data-input:focus, .data-input:focus {
   border-color: lightblue;
   outline: none;
 }
@@ -82,13 +82,20 @@ input[type="password"]:focus, input[type="email"]:focus {
   margin-top: 10px;
 }
 
-input[type="button"] {
+#create-button {
   border-radius: 5px;
   background-color: #1570EF;
   border: none;
   width: 100%;
   padding: 1vh;
   color: white;
+  cursor: pointer;
+  transition: box-shadow .218s;
+}
+
+#create-button:hover {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
 }
 
 #login-href {
