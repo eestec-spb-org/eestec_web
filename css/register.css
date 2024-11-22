@@ -21,11 +21,11 @@ body {
 
 .rectangle {
   width: 55vh;
-  height: 60vh;
+  height: 74vh;
   background-color: #ECF7FD;
   border-radius: 20px;
 
-  padding: 15% 9%;
+  padding: 12% 9%;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
