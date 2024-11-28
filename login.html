@@ -2,19 +2,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/register.css" rel="stylesheet">
-  <script src="js/register.js"></script>
+  <link href="css/login.css" rel="stylesheet">
+  <script src="js/login.js"></script>
 </head>
 
 <body>
   <div id="login-container">
     <div class="rectangle">
-      <p>Create An Account</p>
+      <p>Log In</p>
       <form id="login-form">
-        <div class="input-container">
-          <label for="email-input">Email</label>
-          <input type="email" placeholder="Enter Your Email" id="email-input" class="data-input">
-        </div>
         <div class="input-container">
           <label for="username-input">Username</label>
           <input type="text" placeholder="Enter Your Username" id="username-input" class="data-input">
@@ -33,13 +29,7 @@
           </span>
         </div>
         <div class="input-container">
-          <div id="password-label-container">
-            <label for="password-input">Repeat password</label>
-          </div>
-          <input type="password" placeholder="Repeat Your Password" id="password-repeat-input" class="data-input">
-        </div>
-        <div class="input-container">
-          <button id="create-button" type="submit">Create Account</button>
+          <button id="login-button" type="submit">Log In</button>
         </div>
       </form>
       
@@ -60,7 +50,7 @@
         </div>
         </button>
       </div>
-      <p id="login-href">Already Have An Account ? <a href="login.html">Log In</a></p>
+      <p id="register-href">Don't have an account? <a href="register.html">Create An Account</a></p>
     </div>
   </div>
 </body>
