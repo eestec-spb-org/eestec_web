@@ -37,9 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  form.addEventListener("submit", async function (event) {
+  form.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent the default form submission action
     createButton.innerText = "...";
+    console.log(formData);
     
     if (passwordInput.value !== passwordRepeatInput.value) {
       createButton.innerText = "Password don't match";
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     fetch("http://localhost:5049/api/register", {
       method: "POST",
-      body: formData.toString(),
+      body: JSON.stringify(formData),
       headers: {
         "Content-Type": "application/json",
       },
@@ -59,8 +60,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.json();
     }).then((body) => {
       console.log(body);
-      localStorage.setItem("user", body);
-      createButton.innerText = initCreateButtonText;
+      localStorage.setItem("userId", body.id);
+      createButton.innerText = "Created!";
+      location.href = 'login.html';
     });
   });
 });
