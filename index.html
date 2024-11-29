@@ -10,6 +10,29 @@
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/partners.css">
+  <script>
+    window.onload = () => {
+      var token = localStorage.getItem("token");
+      if (token == null) { return; }
+      fetch("http://localhost:5049/api/me", {
+        method: "GET",
+        headers: {
+          "Accept": "application/json",
+          "Authorization": "Bearer " + token,
+        }
+      }).then((resp) => { return resp.json(); })
+        .then((resp) => {
+          if (resp.username === undefined) {
+            localStorage.clear();
+            return;
+          }
+          let element = document.getElementById("user-name");
+          element.innerText = "Welcome, " + resp.username;
+          element.style.visibility = "visible";
+          document.getElementById("to-login-block").style.visibility = "hidden";
+        });
+    }
+  </script>
 </head>
 
 <body>
@@ -19,6 +42,7 @@
           <img src="resources/EESTech Challenge Logo.svg" alt="Logo">
       </div>
       <div class="nav_head">
+        <p id="user-name" style="visibility: hidden;"></p>
         <a href="#main">Главная</a>
         <a href="#about">О хакатоне</a>
         <a href="#theme">Тематика этого года</a>
@@ -50,7 +74,7 @@
                   </svg>
                 </a>
             </div>
-            <div class="middle">
+            <div id="to-login-block" class="middle">
               <p>Уже зарегистрировался?</p>
               <a href="login.html">
                 Войти

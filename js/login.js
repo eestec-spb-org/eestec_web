@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     emailInput.addEventListener("input", function () {
-      formData.set("email", emailInput.value);
+      formData.set("username", emailInput.value);
     });
   
     form.addEventListener("submit", async function (event) {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
           createButton.innerText = "Invalid email or password";
           return;
         }
-        localStorage.setItem("token", body.token)
+        localStorage.setItem("token", body.access_token)
         createButton.innerText = initCreateButtonText;
         location.href = 'index.html';
       }).catch((error) => {
