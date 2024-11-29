@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const passwordToggler = document.getElementById("password-toggler");
     const createButton = document.getElementById("create-button");
     const initCreateButtonText = createButton.innerText;
-
+  
     const formData = new URLSearchParams();
-
+  
     passwordInput.addEventListener("input", function () {
       formData.set("password", passwordInput.value);
       createButton.innerText = initCreateButtonText;
@@ -20,11 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
     usernameInput.addEventListener("input", function () {
       formData.set("username", usernameInput.value);
     });
-
+  
     form.addEventListener("submit", async function (event) {
       event.preventDefault(); // Prevent the default form submission action
       createButton.innerText = "...";
-
       fetch("http://localhost:8000/login", {
         method: "POST",
         body: formData.toString(),
@@ -43,3 +42,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+

@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const createButton = document.getElementById("create-button");
   const initCreateButtonText = createButton.innerText;
 
-  const formData = new URLSearchParams();
+  const formData = {};
 
   passwordInput.addEventListener("input", function () {
-    formData.set("password", passwordInput.value);
+    formData.password = passwordInput.value;
     createButton.innerText = initCreateButtonText;
   });
 
@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   emailInput.addEventListener("input", function () {
-    formData.set("email", emailInput.value);
+    formData.email = emailInput.value;
   });
 
   usernameInput.addEventListener("input", function () {
-    formData.set("username", usernameInput.value);
+    formData.username = usernameInput.value;
   });
 
   passwordToggler.addEventListener("click", function() {
@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
       return false;
     }
 
-    fetch("http://localhost:8000/register", {
+    fetch("http://localhost:5049/api/register", {
       method: "POST",
       body: formData.toString(),
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
+        "Content-Type": "application/json",
       },
     }).catch((error) => {
       console.log(error);
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.json();
     }).then((body) => {
       console.log(body);
-      localStorage.setItem("user", body)
+      localStorage.setItem("user", body);
       createButton.innerText = initCreateButtonText;
     });
   });
