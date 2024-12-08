@@ -10,29 +10,7 @@
   <link rel="stylesheet" href="css/theme.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/partners.css">
-  <script>
-    window.onload = () => {
-      var token = localStorage.getItem("token");
-      if (token == null) { return; }
-      fetch("http://localhost:5049/api/me", {
-        method: "GET",
-        headers: {
-          "Accept": "application/json",
-          "Authorization": "Bearer " + token,
-        }
-      }).then((resp) => { return resp.json(); })
-        .then((resp) => {
-          if (resp.username === undefined) {
-            localStorage.clear();
-            return;
-          }
-          let element = document.getElementById("user-name");
-          element.innerText = "Welcome, " + resp.username;
-          element.style.visibility = "visible";
-          document.getElementById("to-login-block").style.visibility = "hidden";
-        });
-    }
-  </script>
+  <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -42,14 +20,18 @@
           <img src="resources/EESTech Challenge Logo.svg" alt="Logo">
       </div>
       <div class="nav_head">
-        <p id="user-name" style="visibility: hidden;"></p>
+        <div id="profile-header" style="visibility: hidden;">
+          <p id="user-name"></p>
+          <svg onclick="logout()" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-width="2" d="M32 34V30H16V18H32V14H16C13.7909 14 12 15.7909 12 18V30C12 32.2091 13.7909 34 16 34H32ZM38 24L30 16V22H22V26H30V32L38 24Z" stroke="#ECF7FD"/>
+          </svg>
+        </div>
         <a href="#main">Главная</a>
         <a href="#about">О хакатоне</a>
-        <a href="#theme">Тематика этого года</a>
+        <a href="#theme">Тематика года</a>
         <a href="#organizers">Организаторы</a>
         <a href="#partners">Партнёры</a>
         <a href="#faq">ЧаВо</a>
-          <a href="#faq">ЧаВо</a>
       </div>
     </header>
 
